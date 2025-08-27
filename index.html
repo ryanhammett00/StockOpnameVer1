@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Stock Opname Trifa Simpati</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</head>
+<body>
+<div id="invoiceArea">
+    <!-- HEADER -->
+    <div class="header">
+      <div>
+        <img src="https://media-cgk1-2.cdn.whatsapp.net/v/t61.24694-24/489348710_4198616897128808_5069233381297281842_n.jpg?ccb=11-4&oh=01_Q5Aa1gFPS2H3NKqJRiXjaT0ubWYelnmXebSMvDk-Cqewr6SYYQ&oe=6847D2B4&_nc_sid=5e03e0&_nc_cat=104" alt="Logo Toko" style="height: 150px;">
+      </div>
+  <h1>Stock Opname</h1>
+
+  <form id="itemForm">
+    <input type="text" id="itemName" placeholder="Nama Barang" required>
+    <input type="number" id="stockSystem" placeholder="Stok Sistem" required>
+    <input type="number" id="stockActual" placeholder="Stok Aktual" required>
+    <button type="submit">Tambah</button>
+	<button id="exportBtn">Export ke Excel</button>
+  </form>
+
+  <table id="stockTable">
+    <thead>
+      <tr>
+        <th>Nama Barang</th>
+        <th>Stok Sistem</th>
+        <th>Stok Aktual</th>
+        <th>Selisih</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
